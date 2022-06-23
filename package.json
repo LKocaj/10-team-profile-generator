@@ -1,6 +1,28 @@
 {
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "inquirer",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LKocaj/Team-Profile-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LKocaj/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/LKocaj/Team-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.0.0",
+    "inquirer": "^9.0.0"
+  },
+  "devDependencies": {
     "jest": "^28.1.1"
   }
 }
