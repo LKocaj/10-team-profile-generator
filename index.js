@@ -1,9 +1,9 @@
-const inquirer = import("inquirer");
-const fs = import("fs");
-const Employee = import("./lib/Employee.js");
-const Manager = import("./lib/Manager.js");
-const Intern = import("./lib/Intern.js");
-const Engineer = import("./lib/Engineer.js");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const Employee = require("./lib/Employee.js");
+const Manager = require("./lib/Manager.js");
+const Intern = require("./lib/Intern.js");
+const Engineer = require("./lib/Engineer.js");
 //const createHTML = require("createHTML");
 
 function validateInput(input) {
