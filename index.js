@@ -1,10 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const Employee = require("./lib/Employee");
-const Manager = require("./lib/Manager");
-const Intern = require("./lib/Intern");
-const Engineer = require("./lib/Engineer");
-//const createHTML = require("createHTML");
+const Employee = require("./lib/Employee.js");
+const Manager = require("./lib/Manager.js");
+const Intern = require("./lib/Intern.js");
+const Engineer = require("./lib/Engineer.js");
+const createHTML = require("createHTML");
 
 function validateInput(input) {
   if (input == "") {
@@ -39,7 +39,7 @@ function createEmployee() {
   ];
 
   inquirer.prompt(createEmployee).then((answers) => {
-    const newEmployee = new Employee(answer.name, answer.id, answer.email);
+    const newEmployee = new Employee(answers.name, answers.id, answers.email);
     teamMember.push(newEmployee);
 
     creatTeamMember();
