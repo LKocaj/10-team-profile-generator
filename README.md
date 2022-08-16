@@ -7,16 +7,10 @@
   <h1 align="center">Team Profile Generator</h1>
 
   <p align="center">
-    Create an easy quick profile for mananging teams!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    Create an easy profile for mananging teams!
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <br />
   </p>
 </div>
 
@@ -50,7 +44,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 
 Your challenge is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Because testing is key to making code maintainable, you’ll also write unit tests for each part of your code and ensure that it passes all of them.
 
@@ -71,18 +74,14 @@ Inquirer
 <!-- GETTING STARTED -->
 ## Getting Started
 
-.
-├── __tests__/             //jest tests
-│   ├── Employee.test.js
-│   ├── Engineer.test.js
-│   ├── Intern.test.js
-│   └── Manager.test.js
-├── dist/                  // rendered output (HTML) and CSS style sheet      
-├── lib/                   // classes
-├── src/                   // template helper code 
-├── .gitignore             // indicates which folders and files Git should ignore
-├── index.js               // runs the application
-└── package.json           
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Prerequisites
 
@@ -95,18 +94,22 @@ Inquirer
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
+
 2. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
 3. Install NPM packages
    ```sh
-   npm install
+   npm init -y
    ```
-4. Enter your API in `config.js`
+4. Install node dependencies
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   npm i jest
+   ```
+4. install other node dependency
+   ```js
+   npm i inquirer
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -138,6 +141,6 @@ Lawrence Kocaj
 
 Project Link: [https://github.com/lkocaj/Team-Profile-Generator](https://github.com/lkocaj/Team-Profile-Generator)
 <br>
-Youtube:https://youtu.be/cBaPNBFiw4Y
+Youtube: https://youtu.be/cBaPNBFiw4Y
 
 <p align="right">(<a href="#top">back to top</a>)</p>
