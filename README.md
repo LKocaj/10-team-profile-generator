@@ -15,7 +15,6 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -65,14 +64,7 @@ Inquirer
 <!-- GETTING STARTED -->
 ## Getting Started
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+![Screen Shot 2022-08-15 at 11 43 50 PM](https://user-images.githubusercontent.com/99697175/184794493-d9cded4f-c68a-434c-99d1-158bc46e6668.png)
 
 ### Prerequisites
 
