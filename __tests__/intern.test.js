@@ -1,20 +1,19 @@
 const Intern = require("../lib/Intern");
 
-describe("Intern class constructor", () => {
-  it("New intern creation", () => {
-    const teamMember = new Intern("Lawrence", "1", "lawrencecaj@gmail.com", "UCONN");
-    expect(teamMember.name).toEqual("Lawrence");
-    expect(teamMember.id).toEqual("1");
-    expect(teamMember.email).toEqual("lawrencecaj@gmail.com");
-    expect(teamMember.internSchool).toEqual("UCONN");
-  }),
-    it("getName Function", () => {
-      const teamMember = new Intern(
-        "Lawrence",
-        "1",
-        "lawrencecaj@gmail.com",
-        "lkocaj"
-      );
-      expect(teamMember.getName()).toEqual("Lawrence");
-    });
+test("Can set school via constructor", () => {
+  const testValue = "UCLA";
+  const e = new Intern("Foo", 1, "test@test.com", testValue);
+  expect(e.school).toBe(testValue);
+});
+
+test("getRole() should return \"Intern\"", () => {
+  const testValue = "Intern";
+  const e = new Intern("Foo", 1, "test@test.com", "UCLA");
+  expect(e.getRole()).toBe(testValue);
+});
+
+test("Can get school via getSchool()", () => {
+  const testValue = "UCLA";
+  const e = new Intern("Foo", 1, "test@test.com", testValue);
+  expect(e.getSchool()).toBe(testValue);
 });
