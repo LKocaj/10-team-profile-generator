@@ -124,6 +124,6 @@ Lawrence Kocaj
 
 Project Link: [https://github.com/lkocaj/Team-Profile-Generator](https://github.com/lkocaj/Team-Profile-Generator)
 <br>
-Youtube: https://youtu.be/cBaPNBFiw4Y
+Youtube: [https://youtu.be/cBaPNBFiw4Y](https://www.youtube.com/watch?v=rAeunpgjR3E&ab_channel=KocajCode)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
