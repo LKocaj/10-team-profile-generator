@@ -15,7 +15,6 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -44,16 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
+<img width="1512" alt="Screen Shot 2022-08-15 at 11 39 22 PM" src="https://user-images.githubusercontent.com/99697175/184794342-978227ec-7631-4b05-9f5c-bfae915cb014.png">
 
 Your challenge is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Because testing is key to making code maintainable, you’ll also write unit tests for each part of your code and ensure that it passes all of them.
 
@@ -74,14 +64,7 @@ Inquirer
 <!-- GETTING STARTED -->
 ## Getting Started
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+![Screen Shot 2022-08-15 at 11 43 50 PM](https://user-images.githubusercontent.com/99697175/184794493-d9cded4f-c68a-434c-99d1-158bc46e6668.png)
 
 ### Prerequisites
 
@@ -141,6 +124,6 @@ Lawrence Kocaj
 
 Project Link: [https://github.com/lkocaj/Team-Profile-Generator](https://github.com/lkocaj/Team-Profile-Generator)
 <br>
-Youtube: https://youtu.be/cBaPNBFiw4Y
+Youtube: [https://youtu.be/cBaPNBFiw4Y](https://www.youtube.com/watch?v=rAeunpgjR3E&ab_channel=KocajCode)
 
 <p align="right">(<a href="#top">back to top</a>)</p>

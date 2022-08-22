@@ -21,7 +21,7 @@ const managerPrompt = () => {
             .prompt([
                 {
                     type: "input",
-                    message: `What is the manager's name?`,
+                    message: `What's the manager's name?`,
                     name: "name",
                 },
                 {
@@ -31,12 +31,12 @@ const managerPrompt = () => {
                 },
                 {
                     type: "input",
-                    message: "What is the manager's email?",
+                    message: "What's the manager's email?",
                     name: "email",
                 },
                 {
                     type: "input",
-                    message: "What is the manager's office number?",
+                    message: "What's the manager's office number?",
                     name: "officeNumber",
                 },
             ]).then(answers => {
