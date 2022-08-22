@@ -132,7 +132,7 @@ const createHTMLFile = (htmlPage) => {
 
     fs.writeFile(outputPath, htmlPage, "utf-8", (err) => {
         if(err) throw err;
-        console.log(`Done, see profile at ${outputPath}`)
+        console.log(`Finished, see profile at ${outputPath}`)
     });
 }
 
