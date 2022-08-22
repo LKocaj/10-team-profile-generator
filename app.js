@@ -1,11 +1,8 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-
-//Reminder to install node modules (npm init -y) &  inquirer(npm i inquirer --save) 
+const Intern = require("./lib/Intern"); 
 const inquirer = require("inquirer");
 const path = require("path");
-
 const fs = require("fs");
 
 
@@ -17,7 +14,7 @@ const { run } = require("jest");
 
 const teamProfile = [];
 
-
+// Manager prompt 
 const managerPrompt = () => {
     return new Promise((res, rej) => {
         inquirer
@@ -50,12 +47,13 @@ const managerPrompt = () => {
     });
 }
 
+// Employee Questions 
 const employeePrompt = () => {
     return new Promise((resolve, rej) => {
         inquirer.prompt([
             {
                 type: "list",
-                message: "Use arrow keys to select the next type of employee to enter:",
+                message: "Using the arrow keys, select the next type of employee to enter:",
                 name: "employeeType",
                 choices: [
                     "Engineer",
@@ -67,42 +65,42 @@ const employeePrompt = () => {
                 ]
             },
             {
-                message: "What is the engineer's name?",
+                message: "Enter engineer name",
                 name: "name",
                 when: ({ employeeType }) => employeeType === "Engineer"
             },
             {
-                message: "What is the intern's name?",
+                message: "Enter Intern's name",
                 name: "name",
                 when: ({ employeeType }) => employeeType === "Intern"
             },
             {
-                message: "What is the engineer's ID?",
+                message: "Enter the Engineer's ID",
                 name: "id",
                 when: ({ employeeType }) => employeeType === "Engineer"
             },
             {
-                message: "What is the intern's ID?",
+                message: "Enter Intern's ID",
                 name: "id",
                 when: ({ employeeType }) => employeeType === "Intern"
             },
             {
-                message: "What is the engineer's email address?",
+                message: "Enter Engineer's email address",
                 name: "email",
                 when: ({ employeeType }) => employeeType === "Engineer"
             },
             {
-                message: "What is the intern's email address?",
+                message: "Enter Intern's email address",
                 name: "email",
                 when: ({ employeeType }) => employeeType === "Intern"
             },
             {
-                message: "what is the engineer's GitHub username?",
+                message: "Engineer's GitHub username",
                 name: "github",
                 when: ({ employeeType }) => employeeType === "Engineer"
             },
             {
-                message: "Which school is the intern from?",
+                message: "What school does Intern attend?",
                 name: "school",
                 when: ({ employeeType }) => employeeType === "Intern"
             }
@@ -126,6 +124,7 @@ const employeePrompt = () => {
     })
 }
 
+// Create the output HTML file 
 const createHTMLFile = (htmlPage) => {
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR);
@@ -133,11 +132,11 @@ const createHTMLFile = (htmlPage) => {
 
     fs.writeFile(outputPath, htmlPage, "utf-8", (err) => {
         if(err) throw err;
-        console.log(`Success! See Team Profile Page at ${outputPath}`)
+        console.log(`Done, see profile at ${outputPath}`)
     });
 }
 
-//call the manager first, then Engineer or Intern
+// Manager first
 managerPrompt().then(() => {
     return employeePrompt();
 }).then(() => {
